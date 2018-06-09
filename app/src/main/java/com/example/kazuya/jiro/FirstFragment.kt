@@ -68,17 +68,17 @@ class FirstFragment : Fragment(), TextToSpeech.OnInitListener {
                 0 -> {
                     view.baseVegImage.setImageDrawable(resources.getDrawable(R.drawable.vegm))
                     baseVegCount++
-                    vegText = "やさい"
+                    vegText = "ヤサイ"
                 }
                 1 -> {
                     view.baseVegImage.setImageDrawable(resources.getDrawable(R.drawable.vegl))
                     baseVegCount++
-                    vegText = "やさいおおめ"
+                    vegText = "ヤサイ多め"
                 }
                 2 -> {
                     view.baseVegImage.setImageDrawable(resources.getDrawable(R.drawable.vegs))
                     baseVegCount = 0
-                    vegText = "やさいすくなめ"
+                    vegText = "ヤサイ少なめ"
                 }
                 else -> {
                     baseVegCount = 0
@@ -95,17 +95,17 @@ class FirstFragment : Fragment(), TextToSpeech.OnInitListener {
                     view.garlicImage.visibility = View.VISIBLE
                     view.garlicImage.setImageDrawable(resources.getDrawable(R.drawable.garlics))
                     garlicCount++
-                    garlicText = "にんにくすくなめ"
+                    garlicText = "ニンニク少なめ"
                 }
                 1 -> {
                     view.garlicImage.setImageDrawable(resources.getDrawable(R.drawable.garlicm))
                     garlicCount++
-                    garlicText = "にんにく"
+                    garlicText = "ニンニク"
                 }
                 2 -> {
                     view.garlicImage.setImageDrawable(resources.getDrawable(R.drawable.garlicl))
                     garlicCount++
-                    garlicText = "にんにくおおめ"
+                    garlicText = "ニンニク多め"
                 }
                 3 -> {
                     view.garlicImage.setImageDrawable(resources.getDrawable(R.drawable.garlics))
@@ -152,7 +152,7 @@ class FirstFragment : Fragment(), TextToSpeech.OnInitListener {
                 0 -> {
                     view.oilImage.visibility = View.VISIBLE
                     oilCount = 1
-                    oilText = "あぶら"
+                    oilText = "アブラ"
                 }
                 1 -> {
                     view.oilImage.visibility = View.GONE
