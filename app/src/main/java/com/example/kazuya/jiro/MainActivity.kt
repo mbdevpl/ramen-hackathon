@@ -13,7 +13,6 @@ class MainActivity : AppCompatActivity() {
     private val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
         when (item.itemId) {
             R.id.navigation_home -> {
-                // TODO: switch page
                 viewPager.currentItem = 0
                 return@OnNavigationItemSelectedListener true
             }
