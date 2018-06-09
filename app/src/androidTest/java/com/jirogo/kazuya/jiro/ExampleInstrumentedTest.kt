@@ -1,4 +1,4 @@
-package com.example.kazuya.jiro
+package com.jirogo.kazuya.jiro
 
 import android.support.test.InstrumentationRegistry
 import android.support.test.runner.AndroidJUnit4
