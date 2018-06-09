@@ -1,13 +1,10 @@
 package com.example.kazuya.jiro
 
 import android.os.Bundle
-import android.support.design.widget.BottomNavigationView
 import android.support.v7.app.AppCompatActivity
-import kotlinx.android.synthetic.main.activity_main.*
-import android.view.MenuInflater
 import android.view.Menu
-
-
+import android.view.View
+import android.webkit.WebView
 
 class LearnActivity : AppCompatActivity() {
 
@@ -15,9 +12,8 @@ class LearnActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_learn)
 
-        // this.
-        // navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
-        // navigation.
+        val myWebView = findViewById<View>(R.id.webview) as WebView
+        myWebView.loadUrl("https://ankiweb.net/")
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
