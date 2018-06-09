@@ -12,8 +12,8 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="50dp"
         android:layout_marginRight="50dp"
-        android:layout_marginTop="8dp"
         android:text="Egg"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ramenButton" />
@@ -22,16 +22,24 @@
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
         android:text="Fat"
+        android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/textView7"
-        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ramenButton" />
+
+    <ImageButton
+        android:id="@+id/oilButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="24dp"
+        android:scaleType="centerInside"
+        android:background="@drawable/button_background"
+        app:layout_constraintEnd_toStartOf="@+id/eggButton"
+        app:layout_constraintStart_toEndOf="@+id/porkButton"
+        app:layout_constraintTop_toBottomOf="@+id/ramenButton"
+        app:srcCompat="@drawable/pfat" />
 
     <ImageButton
         android:id="@+id/porkButton"
@@ -39,8 +47,9 @@
         android:layout_height="100dp"
         android:layout_marginLeft="20dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="25dp"
         android:scaleType="centerInside"
+        android:background="@drawable/button_background"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ramenButton"
         app:srcCompat="@drawable/pig" />
@@ -53,6 +62,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="30dp"
         android:scaleType="centerInside"
+        android:background="@drawable/button_background"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ramenm" />
@@ -67,6 +77,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="30dp"
         android:scaleType="centerInside"
+        android:background="@drawable/button_background"
         app:layout_constraintEnd_toStartOf="@+id/gerlicButton"
         app:layout_constraintStart_toEndOf="@+id/ramenButton"
         app:layout_constraintTop_toTopOf="parent"
@@ -80,24 +91,10 @@
         android:layout_marginRight="20dp"
         android:layout_marginTop="30dp"
         android:scaleType="centerInside"
+        android:background="@drawable/button_background"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/garlic1" />
-
-    <ImageButton
-        android:id="@+id/oilButton"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="30dp"
-        android:scaleType="centerInside"
-        app:layout_constraintEnd_toStartOf="@+id/eggButton"
-        app:layout_constraintStart_toEndOf="@+id/porkButton"
-        app:layout_constraintTop_toBottomOf="@+id/vegButton"
-        app:srcCompat="@drawable/pfat" />
 
     <ImageButton
         android:id="@+id/eggButton"
@@ -105,8 +102,9 @@
         android:layout_height="100dp"
         android:layout_marginEnd="20dp"
         android:layout_marginRight="20dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="25dp"
         android:scaleType="centerInside"
+        android:background="@drawable/button_background"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/vegButton"
         app:srcCompat="@drawable/egg" />
@@ -115,7 +113,7 @@
         android:id="@+id/baseImage"
         android:layout_width="300dp"
         android:layout_height="250dp"
-        android:layout_marginTop="300dp"
+        android:layout_marginTop="260dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ramens" />
@@ -126,7 +124,7 @@
         android:layout_height="161dp"
         android:layout_marginLeft="16dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="320dp"
+        android:layout_marginTop="280dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/vegs" />
@@ -134,18 +132,15 @@
     <TextView
         android:id="@+id/textView"
         android:layout_width="0dp"
-        android:layout_height="40dp"
-        android:layout_marginBottom="8dp"
+        android:layout_height="50dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginLeft="20dp"
+        android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
         android:maxLines="2"
-        android:text="Call: TextView"
+        android:text="You can order customized Jiro Ramen Automatically !"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/baseVegImage"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/porkButton" />
@@ -154,10 +149,11 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="60dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="10dp"
-        android:text="Nudle"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="4dp"
+        android:text="Noodle"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -166,10 +162,10 @@
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="56dp"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginStart="50dp"
         android:text="Pork"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ramenButton" />
@@ -177,11 +173,12 @@
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
-        android:layout_height="17dp"
-        android:layout_marginEnd="50dp"
-        android:layout_marginRight="50dp"
-        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="4dp"
         android:text="Garlic"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -189,71 +186,82 @@
     <TextView
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
-        android:layout_height="17dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
         android:text="Vegetable"
+        android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/textView3"
-        app:layout_constraintHorizontal_bias="0.48"
-        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/callButton"
-        android:layout_width="63dp"
-        android:layout_height="92dp"
+        android:layout_width="60dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
         android:layout_marginTop="100dp"
-        android:scaleType="centerInside"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/baseImage"
         app:layout_constraintTop_toBottomOf="@+id/eggButton"
-        app:srcCompat="@drawable/cmt" />
-
-    <ImageView
-        android:id="@+id/oilImage"
-        android:layout_width="133dp"
-        android:layout_height="83dp"
-        android:layout_marginLeft="96dp"
-        android:layout_marginStart="96dp"
-        android:layout_marginTop="76dp"
-        android:visibility="gone"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:srcCompat="@drawable/pfat" />
+        app:srcCompat="@drawable/jirocall" />
 
     <ImageView
         android:id="@+id/eggImage"
-        android:layout_width="115dp"
-        android:layout_height="61dp"
+        android:layout_width="103dp"
+        android:layout_height="64dp"
         android:layout_marginLeft="148dp"
         android:layout_marginStart="148dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="80dp"
         android:visibility="gone"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/textView"
         app:srcCompat="@drawable/egg" />
+
+    <ImageView
+        android:id="@+id/oilImage"
+        android:layout_width="134dp"
+        android:layout_height="85dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:srcCompat="@drawable/pfat" />
 
     <ImageView
         android:id="@+id/porkImage"
         android:layout_width="180dp"
         android:layout_height="118dp"
-        android:layout_marginLeft="110dp"
-        android:layout_marginStart="110dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginLeft="128dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="72dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/textView"
         app:srcCompat="@drawable/pork1" />
 
     <ImageView
         android:id="@+id/garlicImage"
         android:layout_width="184dp"
         android:layout_height="119dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="26dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:srcCompat="@drawable/garlics" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="4dp"
+        android:text="Order \n in Japanese"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/callButton" />
 </android.support.constraint.ConstraintLayout>

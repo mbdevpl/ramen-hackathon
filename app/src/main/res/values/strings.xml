@@ -1,6 +1,5 @@
 <resources>
-    <string name="app_name">Jiro</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="app_name">JiroGo</string>
+    <string name="title_order">Order</string>
+    <string name="title_learn">Learn</string>
 </resources>
