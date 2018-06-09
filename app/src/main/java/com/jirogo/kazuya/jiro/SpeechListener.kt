@@ -1,4 +1,4 @@
-package com.example.kazuya.jiro
+package com.jirogo.kazuya.jiro
 
 import android.speech.tts.UtteranceProgressListener
 import android.util.Log

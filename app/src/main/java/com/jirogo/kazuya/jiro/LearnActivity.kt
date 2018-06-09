@@ -1,4 +1,4 @@
-package com.example.kazuya.jiro
+package com.jirogo.kazuya.jiro
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
