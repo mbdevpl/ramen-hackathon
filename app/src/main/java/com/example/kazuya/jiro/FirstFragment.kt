@@ -188,8 +188,8 @@ class FirstFragment : Fragment(), TextToSpeech.OnInitListener {
         }
 
         view.callButton.setOnClickListener {
-            // ex: men sukuname yasai oome abura (this is Jiro Ramen's Call)
-            speechText = noodleText + vegText + garlicText + oilText
+            // ex: men sukuname yasai ome abura (this is Jiro Ramen's Call)
+            speechText = "$noodleText$vegText$garlicText$oilText でお願いします"
             speakText(speechText)
         }
 

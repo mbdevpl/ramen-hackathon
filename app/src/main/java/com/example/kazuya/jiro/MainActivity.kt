@@ -12,16 +12,12 @@ class MainActivity : AppCompatActivity() {
 
     private val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
         when (item.itemId) {
-            R.id.navigation_home -> {
+            R.id.navigation_call -> {
                 viewPager.currentItem = 0
                 return@OnNavigationItemSelectedListener true
             }
-            R.id.navigation_dashboard -> {
+            R.id.navigation_learn -> {
                 viewPager.currentItem = 1
-                return@OnNavigationItemSelectedListener true
-            }
-            R.id.navigation_notifications -> {
-                viewPager.currentItem = 2
                 return@OnNavigationItemSelectedListener true
             }
         }
@@ -37,13 +33,12 @@ class MainActivity : AppCompatActivity() {
                 return when (position) {
                     0 -> FirstFragment()
                     1 -> SecondFragment()
-                    2 -> ThirdFragment()
                     else -> FirstFragment()
                 }
             }
 
             override fun getCount(): Int {
-                return 3
+                return 2
             }
         }
 
