@@ -2,11 +2,13 @@
 
 Let's do it!
 
-This Android App has been released!(6/10)
+## The Android app
 
-[Google Play](https://play.google.com/store/apps/details?id=com.jirogo.kazuya.jiro)
+Our Android app has been released on June 10th, 2018:
+[Jiro Go Google Play](https://play.google.com/store/apps/details?id=com.jirogo.kazuya.jiro)
 
 ## The event
+
 * [event information](https://supporterzcolab.com/event/374/)
 * [Facebook Group](https://www.facebook.com/groups/245470969342834/)
 
